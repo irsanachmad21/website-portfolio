@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irsan's Portfolio</title>
+    <link href="dist/css/final.css" rel="stylesheet">
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- Header Section Start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home" class="text-lg text-primary block py-6 mt-3 flex flex-wrap items-center">
+                        <img src="dist/img/logo.png" alt="Irsan's Logo" width="40px">
+                        <p
+                            class="text-base text-primary font-bold flex group-hover:text-primary mt-0 px-2 dark:text-white">
+                            Irsan Achmad Maulidan</p>
+                    </a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button"
+                        class="absolute right-4 top-8 block lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu"
+                        class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark lg:dark:bg-transparent dark:shadow-slate-600">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home"
+                                    class="text-base text-forth py-2 mx-8 flex group-hover:text-primary dark:text-white">Beranda</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about"
+                                    class="text-base text-forth py-2 mx-8 flex group-hover:text-primary dark:text-white">Tentang
+                                    Saya</a>
+                            </li>
+                            <li class="group">
+                                <a href="#portofolio"
+                                    class="text-base text-forth py-2 mx-8 flex group-hover:text-primary dark:text-white">Portofolio</a>
+                            </li>
+                            <li class="group">
+                                <a href="#certificate"
+                                    class="text-base text-forth py-2 mx-8 flex group-hover:text-primary dark:text-white">Sertifikat</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact"
+                                    class="text-base text-forth py-2 mx-8 flex group-hover:text-primary dark:text-white">Kontak</a>
+                            </li>
+                            <li class="flex items-center pl-8 mt-2 lg:mt-0">
+                                <div class="flex">
+                                    <span class="mr-2 text-sm text-slate-500">Light</span>
+                                    <input type="checkbox" class="hidden" id="dark-toggle">
+                                    <label for="dark-toggle">
+                                        <div
+                                            class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                                            <div
+                                                class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out">
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <span class="ml-2 text-sm text-slate-500">Dark</span>
+                                </div>
+                            </li>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-36 dark:bg-dark">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full self-center px-4 lg:w-1/2">
+                    <h1 class="text-base font-semibold text-primary md:text-xl">Halo Semua👋, Saya <span
+                            class="block font-bold text-dark text-4xl mt-1 lg:text-5xl dark:text-white">Irsan Achmad
+                            Maulidan</span>
+                    </h1>
+                    <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">Mahasiswa <span
+                            class="text-dark dark:text-white">Teknik Informatika</span></h2>
+                    <p class="font-medium text-secondary mb-10 leading-relaxed">Writing Is Writing, <span
+                            class="text-dark dark:text-white">Not Thinking!</span></p>
+
+                    <a href="#contact"
+                        class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi
+                        Saya</a>
+                </div>
+
+                <div class="w-full self-end px-4 lg:w-1/2">
+                    <div class="relative mt-10 lg:mt-9 lg:right-0">
+                        <img src="dist/img/san.png" alt="Irsan Achmad Maulidan" class="max-w-full mx-auto" width='500'>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="pt-36 pb-32 dark:bg-dark">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-10 lg:w-1/2">
+                    <h2 class="font-bold uppercase text-primary lg:text-3xl mb-3">Tentang Saya</h2>
+                    <h3 class="font-semibold text-dark text-3xl mb-3 max-w-md lg:text-3xl dark:text-white">Menyukai
+                        Dunia Teknologi</h3>
+                    <p class="font-medium text-base text-secondary max-w-xl lg:text-lg lg:text-justify mb-3">Tertarik
+                        Dengan Teknologi Sejak 2017, Saya Memulai Perjalanan di Dunia IT di SMK Dengan Jurusan Teknik
+                        Komputer dan Jaringan Pada Tahun 2018. Setelah Lulus, Minat Saya Terhadap Rekayasa Perangkat
+                        Lunak Membawa Saya ke Perguruan Tinggi, Dimana Saya Sekarang Mengejar Gelar Dalam Bidang Teknik
+                        Informatika.
+                    <p>
+                    <h4 class="font-semibold text-dark text-3xl mb-3 max-w-md lg:text-3xl dark:text-white">Pengalaman
+                        Magang</h4>
+                    <ul
+                        class="font-medium text-base text-secondary max-w-xl lg:text-lg lg:text-justify mb-3 list-disc list-outside ml-5">
+                        <li>Praktek Kerja Lapangan Bagian Bina Marga di Dinas Bina Marga dan Sumber Daya Air Pada
+                            November 2019 Sampai Januari 2020.</li>
+                    </ul>
+                </div>
+                <div class="w-full px-4 lg:w-1/2">
+                    <h3 class="font-semibold text-dark text-2xl mb-3 lg:text-3xl lg:pt-12 dark:text-white">Mari
+                        Terhubung di Sosial
+                        Media</h3>
+                    <p class="font-medium text-base text-secondary mb-4 lg:text-lg lg:text-justify">Jangan Lewatkan
+                        Kesempatan Untuk Terhubung Lebih Jauh. Ayo, Jangan Ragu Untuk Mengikuti Saya di Platform Media
+                        Sosial Lainnya!</p>
+                    <div class="flex items-center">
+                        <!-- Youtube -->
+                        <a href="https://www.youtube.com/IrsanAchmad" target="_blank"
+                            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>YouTube</title>
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="https://instagram.com/irsanachmad_" target="_blank"
+                            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>Instagram</title>
+                                <path
+                                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+                            </svg>
+                        </a>
+
+                        <!-- LinkedIn -->
+                        <a href="https://linkedin.com/in/irsan-achmad-maulidan" target="_blank"
+                            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>LinkedIn</title>
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </a>
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/irsanachmad21" target="_blank"
+                            class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                            <svg role="img" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <title>GitHub</title>
+                                <path
+                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Portfolio Section Start -->
+    <section id="portofolio" class="pt-36 pb-16 bg-slate-100 dark:bg-slate-800">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="mx-auto text-center mb-16">
+                    <h2 class="font-bold text-lg text-primary mb-2 uppercase sm:text-3xl lg:text-4xl">Portofolio</h2>
+                    <h3 class="font-semibold text-dark text-3xl mb-4 dark:text-white">Proyek Terbaru Yang Dibuat</h3>
+                    <p class="font-medium text-md text-secondary md:text-lg">Berikut Ini Adalah Kumpulan Proyek-proyek
+                        Yang Pernah Saya Buat, Sebuah Jejak Dari Upaya Dan Dedikasi Saya Dalam Dunia Pengembangan.</p>
+                </div>
+            </div>
+
+            <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="dist/img/portofolio/laundry.png" alt="Aplikasi Laundry">
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Aplikasi Laundry</h3>
+                    <p class="font-medium text-base text-secondary lg:text-justify">Ini Adalah Proyek CRUD Aplikasi
+                        Laundry Yang Saya Buat Sebagai Tugas Akhir Dari Mata Kuliah Pemrograman 2 Dengan Menggunakan
+                        Java Sebagai Bahasa Pemrogramannya Dan MySQL Sebagai Databasenya.</p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="dist/img/portofolio/sistemadmin.png" alt="Implementasi SSL Dan DNS">
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Implementasi SSL Dan DNS</h3>
+                    <p class="font-medium text-base text-secondary lg:text-justify">Ini Adalah Proyek Implementasi DNS
+                        Dan SSL Ke Sebuah Website Sederhana Yang Dapat Diakses di Browser Sebagai Tugas Akhir Dari Mata
+                        Kuliah Sistem Administrasi. Semua Konfigurasi Menggunakan Ubuntu Server 18.04 Dan Aplikasi
+                        Pendukung Lainnya.</p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="dist/img/portofolio/car.png" alt="Car Game 2D" width="w-full">
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Car Game 2D</h3>
+                    <p class="font-medium text-base text-secondary lg:text-justify">Ini Adalah Proyek Game 2D Yang Saya
+                        Buat Sebagai Tugas Akhir Dari Mata Kuliah Pemrograman 1 Dengan Menggunakan Java Sebagai Bahasa
+                        Pemrogramannya Dan Greenfoot Sebagai IDE-nya.</p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="dist/img/portofolio/quiz.png" alt="Kuis Matematika" width="w-full">
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Aplikasi Kuis Matematika</h3>
+                    <p class="font-medium text-base text-secondary lg:text-justify">Aplikasi Kuis Matematika Berbasis
+                        CLI Yang Saya Buat Adalah Alat Yang Interaktif Dan Pendidikan, Dirancang Untuk Membantu Pengguna
+                        Meningkatkan Kemampuan Matematika Mereka Melalui Kuis Sederhana. Dibuat Menggunakan Bahasa
+                        Pemrograman Java.</p>
+                </div>
+                <div class="mb-12 p-4 md:w-1/2">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="dist/img/portofolio/olahdata.png" alt="Olah Data Perusahaan" width="w-full">
+                    </div>
+                    <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Pengolahan Data Perusahaan
+                    </h3>
+                    <p class="font-medium text-base text-secondary lg:text-justify">Ini Adalah Proyek Pengolahan Data
+                        Sebagai Tugas Akhir Dari Mata Kuliah Logika Algoritma Menggunakan Bahasa Pemrograman Python.
+                        Data Diperoleh Dari File Exel Lalu Saya Melakukan Analisis Dan Menciptakan Visualisasi Yang
+                        Informatif.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section End -->
+
+    <!-- Certificate Section Start -->
+    <section id="certificate" class="pt-36 pb-32 bg-slate-800 dark:bg-slate-300">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="mx-auto text-center mb-16">
+                    <h2 class="font-bold text-lg text-primary mb-2 uppercase sm:text-3xl lg:text-4l">Sertifikat</h2>
+                    <h3 class="font-semibold text-white text-3xl mb-4 dark:text-dark">Sertifikasi Yang Pernah Diikuti
+                    </h3>
+                    <p class="font-medium text-md text-third md:text-lg dark:text-slate-800">Berikut Ini Adalah
+                        Sertifikat Yang Saya Peroleh
+                        Sebagai Bukti Keikutsertaan Saya Dalam Program Pelatihan Yang Relevan Dengan Kemampuan Dan
+                        Pengetahuan Saya.
+                    </p>
+                </div>
+            </div>
+
+            <div class="w-full px-4">
+                <div class="flex flex-wrap items-center justify-center">
+                    <a href="https://www.netacad.com/" target="_blank" class="max-w-[150px] mx-10 py-2">
+                        <img src="dist/img/sertifikat/cisco-color.svg" alt="Cisco CCNA 1" width="150px">
+                        <p class="font-medium text-third text-center dark:text-slate-800">Cisco Networking CCNA 1</p>
+                    </a>
+                    <a href="https://academy.oracle.com/en/oa-web-overview.html" target="_blank"
+                        class="max-w-[150px] mx-10 py-2 pt-5 text-justify">
+                        <img src="dist/img/sertifikat/oracle-color.svg" alt="Oracle Java Fundamentals" width="130px">
+                        <p class="text-center font-medium text-third pt-2 dark:text-slate-800">Oracle Java Fundamentals
+                        </p>
+                    </a>
+                    <a href="https://www.netacad.com/" target="_blank" class="max-w-[150px] mx-10 py-2 ">
+                        <img src="dist/img/sertifikat/cisco-color.svg" alt="Cisco IT Essentials" width="150px">
+                        <p class="font-medium text-third text-center dark:text-slate-800">Cisco Academy IT Essentials
+                        </p>
+                    </a>
+                    <a href="https://bnsp.go.id/" target="_blank" class="max-w-[200px] mx-10 py-2 ">
+                        <img src="dist/img/sertifikat/LOGO-PNG-BNSP.png" alt="Computer and Network Engineering"
+                            width="190px">
+                        <p class="font-medium text-third text-center dark:text-slate-800">Computer and Network
+                            Engineering</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Certificate Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="pt-36 pb-32 dark:bg-slate-800">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="mx-auto text-center mb-16">
+                    <h2 class="font-bold text-lg text-primary mb-2 uppercase sm:text-3xl lg:text-4xl">Kontak</h2>
+                    <h3 class="font-semibold text-dark text-3xl mb-4 dark:text-white">Hubungi Kami di Bawah Ini</h3>
+                    <p class="font-medium text-md text-secondary md:text-lg">Jika Ada Pertanyaan Ataupun Hal Lainnya
+                        Bisa Hubungi Kami di Bawah Ini</p>
+                </div>
+            </div>
+
+            <form>
+                <div class="w-full lg:w-2/3 lg:mx-auto">
+                    <div class="w-full mb-8 px-4">
+                        <label for="name" class="text-base text-primary font-bold">Nama</label>
+                        <input type="text" id="name"
+                            class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                    </div>
+                    <div class="w-full mb-8 px-4">
+                        <label for="email" class="text-base text-primary font-bold">Email</label>
+                        <input type="email" id="email"
+                            class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+                    </div>
+                    <div class="w-full mb-8 px-4">
+                        <label for="message" class="text-base text-primary font-bold">Pesan</label>
+                        <textarea id="message"
+                            class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
+                    </div>
+                    <div class="w-full px-4">
+                        <button
+                            class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="bg-dark pt-24 pb-12 px-8">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-10 mb-12 text-slate-300 font-medium md:w-1/3 text-justify">
+                    <h2 class="font-bold text-3xl text-white mb-5">irsanachmadmaulidan</h2>
+                    <h3 class="font-bold text-2xl mb-2">Hubungi Kami</h3>
+                    <p class="mb-2">irsanmaulidan21@gmail.com</p>
+                    <p class="mb-2">Bekasi Timur Regency 3</p>
+                    <p class="mb-2">Kota Bekasi</p>
+                </div>
+                <div class="w-full px-10 mb-12 text-slate-300 font-medium md:w-1/3">
+                    <h2 class="font-bold text-3xl text-white mb-5">Universitas Bani Saleh</h2>
+                    <h3 class="font-bold text-2xl mb-2">UBS</h3>
+                    <p class="mb-2">admin@ubs.ac.id</p>
+                    <p class="mb-2">Jl. Mayor Madmuin Hasibuan No.68, RT.004/RW.004, Margahayu, Kec. Bekasi Tim., Kota
+                        Bks, Jawa Barat 17113</p>
+                </div>
+                <div class="w-full pl-10 mb-12 md:w-1/3 text-justify">
+                    <h3 class="font-semibold text-2xl text-white mb-5">Tautan Website</h3>
+                    <ul class="text-slate-300">
+                        <li>
+                            <a href="#home" class="inline-block text-base hover:text-primary mb-1">Beranda</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="inline-block text-base hover:text-primary mb-1">Tentang Saya</a>
+                        </li>
+                        <li>
+                            <a href="#portofolio" class="inline-block text-base hover:text-primary mb-1">Portofolio</a>
+                        </li>
+                        <li>
+                            <a href="#certificate" class="inline-block text-base hover:text-primary mb-1">Sertifikat</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="inline-block text-base hover:text-primary mb-1">Kontak</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="w-full pt-10 border-t border-slate-800">
+                <div class="flex items-center justify-center mb-5">
+                    <!-- Youtube -->
+                    <a href="https://www.youtube.com/IrsanAchmad" target="_blank"
+                        class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>YouTube</title>
+                            <path
+                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                        </svg>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://instagram.com/irsanachmad_" target="_blank"
+                        class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>Instagram</title>
+                            <path
+                                d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+                        </svg>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="https://linkedin.com/in/irsan-achmad-maulidan" target="_blank"
+                        class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>LinkedIn</title>
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/irsanachmad21" target="_blank"
+                        class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                        <svg role="img" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <title>GitHub</title>
+                            <path
+                                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                        </svg>
+                    </a>
+                </div>
+                <p class="font-medium text-sm text-slate-500 text-center">Created By <a
+                        href="https://instagram.com/irsanachmad_" target="_blank"
+                        class="text-primary font-bold">Irsan</a>, Using <a href="https://tailwindcss.com/"
+                        target="_blank" class="font-bold text-sky-500">Tailwind CSS</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Back To Top Start -->
+    <a href="#home"
+        class="hidden h-14 w-14 bg-primary block rounded-full fixed justify-center items-center z-[9999] bottom-5 right-5 p-4 hover:animate-pulse"
+        id="to-top">
+        <span class="block w-5 h-5 border-t-4 border-l-4 rotate-45 mt-2"></span>
+    </a>
+    <!-- Back To Top End -->
+
+    <script src="dist/js/script.js"></script>
+
+</body>
+
+</html>
